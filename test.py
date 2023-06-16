@@ -1,6 +1,5 @@
 import requests
 import os
-import urllib
 import json
 import datetime
 import tqdm
