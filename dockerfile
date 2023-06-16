@@ -11,4 +11,4 @@ COPY . /bar_replay_processor
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run your script when the container launches
-CMD ["python", "./test.py"]
+CMD ["python", "./BAR_get_replays.py"]

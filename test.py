@@ -19,10 +19,11 @@ date_end = "2023-06-04" # datetime.datetime.today().strftime('%Y-%m-%d') #"2023-
 
 str_game_type = "pro_duels"
 #url_replays_store = r"https://storage.uk.cloud.ovh.net/v1/AUTH_10286efc0d334efd917d476d7183232e/BAR/demos/"
-path_local_replays = r".\BAR_replays\\"+str_game_type+"\\"+date_start+"_"+date_end
+path_replay_files = r".\BAR_replays\\"+str_game_type+"\\"+date_start+"_"+date_end
 path_output = r".\Output\\"+str_game_type
 path_replay_metadata = path_output+"\\replay_metadata"
 
+create_folder(path_replay_files)
 create_folder(path_replay_metadata)
 
 #response = requests.get(url_replays_store)
